@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  padding-top: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 100%;
+  width: 400px;
+  height: 100vh;
+  border-left: 1px solid #f0f0f0;
+}
+.header {
+  padding: 20px 40px;
+  border-bottom: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  align-self: start;
+}
+.header h3 {
+  margin-bottom: 10px;
+}
+.profile {
+  position: absolute;
+  top: 120px;
+  left: 40px;
+}
+.title {
+  padding-left: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.delete_title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* ///////BUTTONS/////// */
+.logout_btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background-color: rgb(21, 48, 91);
+  color: #fff;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+.update_btn {
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+.delete_btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+/* /////////////////// */
+.update {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.upd-form {
+  padding: 20px 40px 20px 40px;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+.form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+.form-control.old {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.footer {
+  border-top: 1px solid #f0f0f0;
+  position: absolute;
+  left: 0;
+  padding-left: 40px;
+  bottom: 0;
+  justify-content: center;
+  width: 365px;
+}
+
+.phperror {
+  font-size: 14px;
+  display: flex;
+  color: #e74c3c;
+  margin: 0;
+  justify-content: center;
+}
+
+.form-success {
+  font-size: 14px;
+  display: flex;
+  color: #2ecc71;
+  margin: 0;
+  justify-content: center;
+}
